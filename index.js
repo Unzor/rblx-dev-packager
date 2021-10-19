@@ -12,6 +12,7 @@ app.post('/api/add', function(req, res){
  });
  res.send({success: true, url: '/games/' + req.body.name});
 });
-app.listen(5050, function(){
-    console.log('App listening!');
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
 });
