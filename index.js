@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('dev'));
 app.get('/', function(req, res){
-res.send('yes');
+res.send('Search for a game here.');
 });
 app.post('/api/add', function(req, res){
     var h = req.files;
