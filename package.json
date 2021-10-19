@@ -1,21 +1,47 @@
 {
-  "name": "test-npminti",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+  "_from": "rblx-dev-packager",
+  "_id": "rblx-dev-packager@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-/+nujoDXVFdkHvy6RbT9QlUnu+CC08FW3+bf4mqbFCYNQlLsGNukKvbKVQhwBmSc3hmaBQ5GVNjfHe3lONJk/Q==",
+  "_location": "/rblx-dev-packager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rblx-dev-packager",
+    "name": "rblx-dev-packager",
+    "escapedName": "rblx-dev-packager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "keywords": [],
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rblx-dev-packager/-/rblx-dev-packager-1.0.8.tgz",
+  "_shasum": "a086f2449e698265adc5ca6c7ecc26ed98e6f83e",
+  "_spec": "rblx-dev-packager",
+  "_where": "/home/runner/testerk",
   "author": "",
-  "license": "ISC",
+  "bin": {
+    "rblx-get": "bin/get.js",
+    "rblx-publish": "bin/publish.js"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
+    "axios": "^0.23.0",
     "express": "^4.17.1",
-    "express-fileupload": "^1.2.1",
-    "lodash": "^4.17.21",
-    "morgan": "^1.10.0"
-  }
+    "form-data": "^4.0.0"
+  },
+  "deprecated": false,
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "rblx-dev-packager",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.10"
 }
