@@ -33,6 +33,7 @@ app.post('/api/add', function(req, res){
  });
  res.send({success: true, url: '/games/' + req.body.name});
 });
-app.listen(5050, function(){
-    console.log('App listening!');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
