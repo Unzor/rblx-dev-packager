@@ -1,29 +1,12 @@
 {
-  "_from": "rblx-dev-packager",
-  "_id": "rblx-dev-packager@1.0.8",
-  "_inBundle": false,
-  "_integrity": "sha512-/+nujoDXVFdkHvy6RbT9QlUnu+CC08FW3+bf4mqbFCYNQlLsGNukKvbKVQhwBmSc3hmaBQ5GVNjfHe3lONJk/Q==",
-  "_location": "/rblx-dev-packager",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "rblx-dev-packager",
-    "name": "rblx-dev-packager",
-    "escapedName": "rblx-dev-packager",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/rblx-dev-packager/-/rblx-dev-packager-1.0.8.tgz",
-  "_shasum": "a086f2449e698265adc5ca6c7ecc26ed98e6f83e",
-  "_spec": "rblx-dev-packager",
-  "_where": "/home/runner/testerk",
-  "author": "",
+  "name": "rblx-dev-packager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node index.js"
+  }
   "bin": {
     "rblx-get": "bin/get.js",
     "rblx-publish": "bin/publish.js"
@@ -37,15 +20,8 @@
     "cors": "^1.2.1"
   },
   "deprecated": false,
-  "description": "",
   "keywords": [],
   "license": "ISC",
-  "main": "index.js",
-  "name": "rblx-dev-packager",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
   "engines": {
     "node": "14.x"
   },
