@@ -28,10 +28,10 @@ res.send('yes');
 app.post('/api/add', function(req, res){
     var h = req.files;
     var game_buffer=h.fileUploaded.data;
- app.get('/games/' + req.body.name, function(req, res){
+ app.get('/games/' + req.query.name, function(req, res){
  res.send(game_buffer);
  });
- res.send({success: true, url: '/games/' + req.body.name});
+ res.send({success: true, url: '/games/' + req.query.name});
 });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
