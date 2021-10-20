@@ -1,3 +1,4 @@
+const urlExists = require('./url-exists');
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const cors = require('cors');
@@ -26,10 +27,16 @@ app.get('/', function(req, res){
 res.send('Search for a game here.');
 });
 app.post('/api/add', function(req, res){
+    urlExists(req.protocol + '://' + req.get('host') + '/games/' + req.query.name)
+  .then(() => {
+res.sendStatus(400);
+    })
+  .catch(() => {
     var h = req.files;
     var game_buffer=h.fileUploaded.data;
  app.get('/games/' + req.query.name, function(req, res){
  res.send(game_buffer);
+ });
  });
  res.send({success: true, url: '/games/' + req.query.name});
 });
