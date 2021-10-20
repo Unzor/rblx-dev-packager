@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-(async () => {const axios = require('axios');
+const axios = require('axios');
 const FormData = require('form-data');
 const fs = require('fs');
 
@@ -11,11 +11,14 @@ const form = new FormData();
 form.append('fileUploaded', image, process.argv[2]);
 
 // Send form data with axios
-const response = await axios.post(`https://rblx-dev-packager.herokuapp.com/api/add?name=${process.argv[3]}`, form, {
+const response = axios.post(`https://rblx-dev-packager.herokuapp.com/api/add?name=${process.argv[3]}`, form, {
   headers: {
     ...form.getHeaders()
   },
-});
-
-console.log(response.data);
+}).then((response) => {
+ console.log(response.data);
+})
+.catch((error) => {
+throw error;
+})
 })()
