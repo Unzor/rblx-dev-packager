@@ -30,8 +30,10 @@ app.post('/api/add', function(req, res){
     urlExists('https://rblx-dev-packager.herokuapp.com/games/' + req.query.name)
   .then(() => {
 res.sendStatus(400);
+        console.log('URL Exists, game is occupated');
     })
   .catch(() => {
+     console.log('Game is free! URL does not exist');
     var h = req.files;
     var game_buffer=h.fileUploaded.data;
  app.get('/games/' + req.query.name, function(req, res){
