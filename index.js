@@ -27,7 +27,7 @@ app.get('/', function(req, res){
 res.send('Search for a game here.');
 });
 app.post('/api/add', function(req, res){
-    urlExists(req.protocol + '://' + req.get('host') + '/games/' + req.query.name)
+    urlExists('https://rblx-dev-packager.herokuapp.com/games/' + req.query.name)
   .then(() => {
 res.sendStatus(400);
     })
